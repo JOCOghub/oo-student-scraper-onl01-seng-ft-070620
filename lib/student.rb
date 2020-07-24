@@ -17,6 +17,7 @@ class Student
     end
   end
 #^students_array is the return value of the .scrape_index_page method in the scraper class. Instead of calling the method we are passing it in which is better
+#here we add the name, location, and url
   
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |attr, value|
