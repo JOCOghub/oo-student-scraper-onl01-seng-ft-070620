@@ -21,7 +21,7 @@ class Student
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |attr, value|
       self.send("#{attr}=", value)
-  end
+      end
     self
   end
   #^attributes_hash is the return value of .scrape_profile_page method
