@@ -2,7 +2,7 @@ require_relative "../lib/scraper.rb"
 require_relative "../lib/student.rb"
 require 'nokogiri'
 require 'colorize'
-
+#this class calls method of both the scraper and student class putting it all together
 class CommandLineInterface
   BASE_PATH = "https://learn-co-curriculum.github.io/student-scraper-test-page/"
 

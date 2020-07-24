@@ -12,17 +12,19 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.each do |student_hash|
-      Student.new(student_hash)
+    students_array.collect do |student_hash| #.each
+      Student.new(student_hash)             #works also
     end
   end
-
+#^students_array is the return value of the .scrape_index_page method in the scraper class. Instead of calling the method we are passing it in which is better
+  
   def add_student_attributes(attributes_hash)
     attributes_hash.each do |attr, value|
       self.send("#{attr}=", value)
-    end
+  end
     self
   end
+  #^attributes_hash is the return value of .scrape_profile_page method
 
   def self.all
     @@all
