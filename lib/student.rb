@@ -26,7 +26,7 @@ class Student
     self
   end
   #^attributes_hash is the return value of .scrape_profile_page method
-
+  #here we add the other attributes about them
   def self.all
     @@all
   end
